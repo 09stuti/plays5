@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStation - PS5 Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Game<span>Station</span></div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="cart">
+        🛒 Cart <span id="cartCount">0</span>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="small-title">NEXT GENERATION GAMING</p>
+        <h1>Play Beyond<br><span>Limits.</span></h1>
+
+        <p>
+            Explore our collection of PlayStation 5 consoles,
+            controllers and gaming accessories.
+        </p>
+
+        <a href="#products" class="btn">Shop Now</a>
+    </div>
+
+    <div class="hero-console">
+        <div class="ps5">
+            <div class="console-light"></div>
+            <div class="disc"></div>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div>
+        <strong>🚚 Free Delivery</strong>
+        <p>On orders above ₹5,000</p>
+    </div>
+
+    <div>
+        <strong>🔒 Secure Payment</strong>
+        <p>100% secure checkout</p>
+    </div>
+
+    <div>
+        <strong>⭐ Quality Products</strong>
+        <p>Original gaming products</p>
+    </div>
+
+    <div>
+        <strong>📞 Support</strong>
+        <p>Customer assistance</p>
+    </div>
+</section>
+
+<section class="products-section" id="products">
+
+    <div class="section-heading">
+        <p>OUR COLLECTION</p>
+        <h2>Featured Products</h2>
+    </div>
+
+    <div class="filter-buttons">
+        <button class="filter active" data-category="all">All</button>
+        <button class="filter" data-category="console">Consoles</button>
+        <button class="filter" data-category="controller">Controllers</button>
+        <button class="filter" data-category="accessory">Accessories</button>
+    </div>
+
+    <div class="products" id="productContainer">
+
+        <div class="product-card" data-category="console">
+            <div class="product-image console-img">🎮</div>
+            <div class="product-info">
+                <span>Console</span>
+                <h3>PlayStation 5 Slim</h3>
+                <p>1TB SSD • Digital Edition</p>
+
+                <div class="price-row">
+                    <strong>₹44,999</strong>
+                    <button onclick="addToCart('PlayStation 5 Slim',44999)">
+                        Add +
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="console">
+            <div class="product-image console-img">🎮</div>
+            <div class="product-info">
+                <span>Console</span>
+                <h3>PlayStation 5</h3>
+                <p>825GB SSD • Disc Edition</p>
+
+                <div class="price-row">
+                    <strong>₹49,999</strong>
+                    <button onclick="addToCart('PlayStation 5',49999)">
+                        Add +
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="controller">
+            <div class="product-image controller-img">🎮</div>
+            <div class="product-info">
+                <span>Controller</span>
+                <h3>DualSense Wireless</h3>
+                <p>Wireless PS5 Controller</p>
+
+                <div class="price-row">
+                    <strong>₹6,499</strong>
+                    <button onclick="addToCart('DualSense Wireless',6499)">
+                        Add +
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="controller">
+            <div class="product-image controller-img">🎮</div>
+            <div class="product-info">
+                <span>Controller</span>
+                <h3>DualSense Edge</h3>
+                <p>Performance Wireless Controller</p>
+
+                <div class="price-row">
+                    <strong>₹18,999</strong>
+                    <button onclick="addToCart('DualSense Edge',18999)">
+                        Add +
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="accessory">
+            <div class="product-image accessory-img">🎧</div>
+            <div class="product-info">
+                <span>Accessory</span>
+                <h3>Pulse 3D Headset</h3>
+                <p>Wireless Gaming Headset</p>
+
+                <div class="price-row">
+                    <strong>₹8,999</strong>
+                    <button onclick="addToCart('Pulse 3D Headset',8999)">
+                        Add +
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="accessory">
+            <div class="product-image accessory-img">🎮</div>
+            <div class="product-info">
+                <span>Accessory</span>
+                <h3>DualSense Charging Station</h3>
+                <p>Charge two controllers</p>
+
+                <div class="price-row">
+                    <strong>₹2,499</strong>
+                    <button onclick="addToCart('Charging Station',2499)">
+                        Add +
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div>
+        <p class="section-label">ABOUT US</p>
+        <h2>Your Gaming Store</h2>
+
+        <p>
+            GameStation is a college project based e-commerce website
+            designed for PlayStation 5 products. Users can browse
+            products, check prices and add products to their shopping cart
+            through a simple and interactive interface.
+        </p>
+
+        <a href="#products" class="btn">Explore Products</a>
+    </div>
+
+    <div class="about-box">
+        <div>🎮</div>
+        <h3>Next Gen Gaming</h3>
+        <p>Experience a modern gaming store interface.</p>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="section-heading">
+        <p>GET IN TOUCH</p>
+        <h2>Contact Us</h2>
+    </div>
+
+    <form onsubmit="sendMessage(event)">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <div class="logo">Game<span>Station</span></div>
+
+    <p>
+        © 2026 GameStation. College E-Commerce Project.
+    </p>
+
+    <div>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </div>
+</footer>
+
+<div class="cart-popup" id="cartPopup">
+    <div class="cart-box">
+        <button class="close" onclick="closeCart()">×</button>
+
+        <h2>🛒 Shopping Cart</h2>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-total">
+            Total: ₹<span id="cartTotal">0</span>
+        </div>
+
+        <button class="checkout" onclick="checkout()">
+            Proceed to Checkout
+        </button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
